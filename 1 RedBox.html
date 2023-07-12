@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM Manipulation</title>
+    <style>
+      .square {
+        width: 300px;
+        height: 300px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="square"></div>
+    <script>
+      document.querySelector(".square").addEventListener("click", function () {
+        this.style.backgroundColor = "yellow";
+        this.style.width = "600px";
+        this.style.height = "600px";
+      });
+    </script>
+  </body>
+</html>
